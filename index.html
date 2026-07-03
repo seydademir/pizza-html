@@ -1,26 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workintech + 🍕</title>
-  </head>
-
-  <body>
-    <div id="app">
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s5-bonus-challenge-html-pizza" target="_blank">
-          <img src="./workintech.svg" class="logo" alt="Workintech logo">
-        </a>
-        <h1>Hello Coder!</h1>
-        <p class="read-the-docs">
-          Click on the Workintech logo to see the Readme of the project
-        </p>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teknolojik Yemekler - Ana Sayfa</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Fontlar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Quattrocento:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="app">
+    
+    <!-- HERO BÖLÜMÜ -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <img src="./public/assets/iteration-1/logo.svg" alt="Teknolojik Yemekler" class="hero-logo">
+        <p class="hero-subtext">fırsatı kaçırma</p>
+        <h1 class="hero-title">KOD ACIKTIRIR<br>PİZZA, DOYURUR</h1>
+        <button class="hero-btn">ACIKTIM</button>
       </div>
-    </div>
-  </body>
+    </section>
 
+    <!-- KATEGORİ NAVİGASYONU -->
+    <nav class="category-nav">
+      <ul class="category-list">
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/1.svg" alt="Kore" class="category-icon">
+          <span>YENİ! Kore</span>
+        </li>
+        <li class="category-item active">
+          <img src="./public/assets/iteration-2/icons/2.svg" alt="Pizza" class="category-icon">
+          <span>Pizza</span>
+        </li>
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/3.svg" alt="Burger" class="category-icon">
+          <span>Burger</span>
+        </li>
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/4.svg" alt="Kızartmalar" class="category-icon">
+          <span>Kızartmalar</span>
+        </li>
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/5.svg" alt="Fast Food" class="category-icon">
+          <span>Fast Food</span>
+        </li>
+        <li class="category-item">
+          <img src="./public/assets/iteration-2/icons/6.svg" alt="Gazlı İçecek" class="category-icon">
+          <span>Gazlı İçecekler</span>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- KAMPANYALAR (3 KART) -->
+    <section class="campaigns-container">
+      <div class="card-big-red">
+        <div class="card-content">
+          <h2>Özel<br>Lezzetus</h2>
+          <p>Position Absolute Acı Burger</p>
+          <button class="card-btn">SİPARİŞ VER</button>
+        </div>
+        <img src="./public/assets/iteration-2/cta/kart-1.png" alt="Özel Lezzetus" class="card-img-bg">
+      </div>
+
+      <div class="campaigns-right-column">
+        <div class="card-small dark-card">
+          <div class="card-content">
+            <h3>Hackathlon<br>Burger Menü</h3>
+            <button class="card-btn">SİPARİŞ VER</button>
+          </div>
+          <img src="./public/assets/iteration-2/cta/kart-2.png" alt="Burger Menü" class="card-img-right">
+        </div>
+
+        <div class="card-small light-card">
+          <div class="card-content">
+            <h3><span class="text-red">Çoooook</span> hızlı<br>npm gibi kurye</h3>
+            <button class="card-btn">SİPARİŞ VER</button>
+          </div>
+          <img src="./public/assets/iteration-2/cta/kart-3.png" alt="Hızlı Kurye" class="card-img-right">
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜRÜNLER BÖLÜMÜ -->
+    <section class="products-section">
+      <div class="products-header">
+        <p class="products-subtitle">en çok paketlenen menüler</p>
+        <h2 class="products-title">Acıktıran Kodlara Doyuran Lezzetler</h2>
+      </div>
+
+      <nav class="sub-filter-nav">
+        <ul class="sub-filter-list">
+          <li class="sub-filter-item"><img src="./public/assets/iteration-2/icons/1.svg" alt="">Ramen</li>
+          <li class="sub-filter-item active"><img src="./public/assets/iteration-2/icons/2.svg" alt="">Pizza</li>
+          <li class="sub-filter-item"><img src="./public/assets/iteration-2/icons/3.svg" alt="">Burger</li>
+          <li class="sub-filter-item"><img src="./public/assets/iteration-2/icons/4.svg" alt="">French fries</li>
+          <li class="sub-filter-item"><img src="./public/assets/iteration-2/icons/5.svg" alt="">Fast food</li>
+          <li class="sub-filter-item"><img src="./public/assets/iteration-2/icons/6.svg" alt="">Soft drinks</li>
+        </ul>
+      </nav>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="./public/assets/iteration-2/pictures/food-1.png" alt="Terminal Pizza" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3>Terminal Pizza</h3>
+            <div class="product-stats">
+              <span class="stat-rating">4.9</span>
+              <span class="stat-count">(200)</span>
+              <span class="stat-price">60₺</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="./public/assets/iteration-2/pictures/food-2.png" alt="Position Absolute Acı Pizza" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3>Position Absolute Acı Pizza</h3>
+            <div class="product-stats">
+              <span class="stat-rating">4.9</span>
+              <span class="stat-count">(928)</span>
+              <span class="stat-price">85₺</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="./public/assets/iteration-2/pictures/food-3.png" alt="useEffect Tavuklu Burger" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3>useEffect Tavuklu Burger</h3>
+            <div class="product-stats">
+              <span class="stat-rating">4.9</span>
+              <span class="stat-count">(462)</span>
+              <span class="stat-price">75₺</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER BÖLÜMÜ -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="footer-column footer-brand">
+          <img src="./public/assets/iteration-2/footer/logo-footer.svg" alt="Teknolojik Yemekler" class="footer-logo">
+          <ul class="footer-info-list">
+            <li><img src="./public/assets/iteration-2/footer/icons/icon-1.png" alt="Konum"> <span>341 Londonderry Road, Istanbul Türkiye</span></li>
+            <li><img src="./public/assets/iteration-2/footer/icons/icon-2.png" alt="E-posta"> <span>aciktim@teknolojikyemekler.com</span></li>
+            <li><img src="./public/assets/iteration-2/footer/icons/icon-3.png" alt="Telefon"> <span>+90 216 123 45 67</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-menus">
+          <h4>Hot Menu</h4>
+          <ul>
+            <li>Terminal Pizza</li>
+            <li>5 Stack Burger Menü</li>
+            <li>useEffect Tavuklu Pizza</li>
+            <li>Beyaz Ccnyb Fries</li>
+            <li>Testler Geçti Mutlu Burger</li>
+            <li>Position Absolute Acı Burger</li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-insta">
+          <h4>Instagram</h4>
+          <div class="insta-grid">
+            <img src="./public/assets/iteration-2/footer/insta/li-0.png" alt="Instagram 1">
+            <img src="./public/assets/iteration-2/footer/insta/li-1.png" alt="Instagram 2">
+            <img src="./public/assets/iteration-2/footer/insta/li-2.png" alt="Instagram 3">
+            <img src="./public/assets/iteration-2/footer/insta/li-3.png" alt="Instagram 4">
+            <img src="./public/assets/iteration-2/footer/insta/li-4.png" alt="Instagram 5">
+            <img src="./public/assets/iteration-2/footer/insta/li-5.png" alt="Instagram 6">
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>© 2023 Teknolojik Yemekler.</p>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
 </html>
